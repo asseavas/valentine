@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Handjet', serif;
   background: radial-gradient(circle, rgba(255, 154, 158, 0.8) 0%, rgba(250, 208, 196, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
   overflow: hidden;
   display: flex;
@@ -18,7 +18,8 @@ body {
 .container {
   text-align: center;
   background: rgba(255, 255, 255, 0.9);
-  padding: 23px;
+  padding-block: 23px;
+  padding-inline: 30px;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -79,8 +80,9 @@ h1 {
 }
 
 button {
+  font-family: "Handjet", serif;
   padding: 10px 20px;
-  font-size: 19px;
+  font-size: 25px;
   border: none;
   border-radius: 25px;
   cursor: pointer;
@@ -89,6 +91,12 @@ button {
   color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   animation: pulse 2s infinite;
+}
+
+@media (max-width: 600px) {
+  button {
+    font-size: 20px;
+  }
 }
 
 @keyframes pulse {
